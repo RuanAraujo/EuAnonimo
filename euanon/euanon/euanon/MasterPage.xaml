@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
+             x:Class="euanon.MasterPage"
+             Title="Menu"
+             Icon="hamburger.png"
+             BackgroundColor="#B2DFDB">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid RowSpacing="0" ColumnSpacing="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Image
+                Grid.ColumnSpan="2"
+				Source="bg.jpg"
+                Aspect="AspectFill"
+				HorizontalOptions="FillAndExpand"
+				VerticalOptions ="FillAndExpand"/>
+                <StackLayout Grid.ColumnSpan="2">
+                    <controls:CircleImage Source="{Binding UserImage, Mode=OneWay}">
+                        <controls:CircleImage.WidthRequest>
+                            <OnPlatform x:TypeArguments="x:Double"
+                            iOS="55"
+                            Android="120"
+                            WinPhone="40"/>
+                        </controls:CircleImage.WidthRequest>
+                        <controls:CircleImage.HeightRequest>
+                            <OnPlatform x:TypeArguments="x:Double"
+                            iOS="55"
+                            Android="120"
+                            WinPhone="40"/>
+                        </controls:CircleImage.HeightRequest>
+                    </controls:CircleImage>
+                    <Label Text="{Binding UserName}" TextColor="#B2DFDB" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" FontSize="Large"/>
+                </StackLayout>
+                <!--<Image Source="{Binding UserImage}"/>
+                <Label Text="{Binding UserName}" TextColor="#B2DFDB" Grid.Column="1" Grid.Row="0" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>-->
+                <StackLayout Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2">
+                    <Button Text="Logout" BackgroundColor="#EF5350" Command="{Binding LogoutCommand}"/>
+                </StackLayout>
+                <StackLayout Grid.Row="1" Grid.ColumnSpan="2"  Padding="30">
+                    <Label Text="Explore nossas categorias" FontSize="Medium"/>
+                    <Frame BackgroundColor="Transparent" Padding="20">
+                        <ListView x:Name="listView" VerticalOptions="Center" SeparatorVisibility="Default" HorizontalOptions="Center">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ImageCell Text="{Binding Title}" TextColor="Black" ImageSource="{Binding IconSource}" Height="200"/>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </Frame>
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

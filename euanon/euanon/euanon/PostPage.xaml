@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="euanon.PostPage"
+             Title="Poste"
+             BackgroundColor="#E0F7FA">
+    <ContentPage.Content>
+        <StackLayout Padding="10">
+            <Label Text="Se expresse de todas as formas, você estará anônimo! Mas lembre-se, se postar algo de má intenção, temos seu facebook como validação!" FontSize="Small"/>
+            <Entry Placeholder="Titulo.."/>
+            <Editor HeightRequest="300" />
+            <Button Text="Postar" BorderRadius="50" BackgroundColor="#80DEEA"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
