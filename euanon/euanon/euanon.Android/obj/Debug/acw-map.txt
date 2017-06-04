@@ -2,6 +2,22 @@ euanon.Droid.MainActivity, euanon.Android;md5a335de0d7c27bf54ffb55445214cd815.Ma
 euanon.Droid.MainActivity, euanon.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5a335de0d7c27bf54ffb55445214cd815.MainActivity
 euanon.Droid.MainActivity;md5a335de0d7c27bf54ffb55445214cd815.MainActivity
 euanon.droid.MainActivity;md5a335de0d7c27bf54ffb55445214cd815.MainActivity
+euanon.Droid.Services.PushHandlerBroadcastReceiver, euanon.Android;md5196f0fd84b145128cde3f87d371d75fb.PushHandlerBroadcastReceiver
+euanon.Droid.Services.PushHandlerBroadcastReceiver, euanon.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5196f0fd84b145128cde3f87d371d75fb.PushHandlerBroadcastReceiver
+euanon.Droid.Services.PushHandlerBroadcastReceiver;md5196f0fd84b145128cde3f87d371d75fb.PushHandlerBroadcastReceiver
+euanon.droid.services.PushHandlerBroadcastReceiver;md5196f0fd84b145128cde3f87d371d75fb.PushHandlerBroadcastReceiver
+euanon.Droid.Services.GcmService, euanon.Android;md5196f0fd84b145128cde3f87d371d75fb.GcmService
+euanon.Droid.Services.GcmService, euanon.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5196f0fd84b145128cde3f87d371d75fb.GcmService
+euanon.Droid.Services.GcmService;md5196f0fd84b145128cde3f87d371d75fb.GcmService
+euanon.droid.services.GcmService;md5196f0fd84b145128cde3f87d371d75fb.GcmService
+Gcm.Client.GcmBroadcastReceiverBase`1, GCM.Client;md5214eafb7e7b3b7fcc363a68a6358563f.GcmBroadcastReceiverBase_1
+Gcm.Client.GcmBroadcastReceiverBase`1, GCM.Client, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null;md5214eafb7e7b3b7fcc363a68a6358563f.GcmBroadcastReceiverBase_1
+Gcm.Client.GcmBroadcastReceiverBase`1;md5214eafb7e7b3b7fcc363a68a6358563f.GcmBroadcastReceiverBase_1
+gcm.client.GcmBroadcastReceiverBase_1;md5214eafb7e7b3b7fcc363a68a6358563f.GcmBroadcastReceiverBase_1
+Gcm.Client.GcmServiceBase, GCM.Client;md5214eafb7e7b3b7fcc363a68a6358563f.GcmServiceBase
+Gcm.Client.GcmServiceBase, GCM.Client, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null;md5214eafb7e7b3b7fcc363a68a6358563f.GcmServiceBase
+Gcm.Client.GcmServiceBase;md5214eafb7e7b3b7fcc363a68a6358563f.GcmServiceBase
+gcm.client.GcmServiceBase;md5214eafb7e7b3b7fcc363a68a6358563f.GcmServiceBase
 ImageCircle.Forms.Plugin.Droid.ImageCircleRenderer, ImageCircle.Forms.Plugin.Android;md5f99670a967ca5f40091da02b64448d9f.ImageCircleRenderer
 ImageCircle.Forms.Plugin.Droid.ImageCircleRenderer, ImageCircle.Forms.Plugin.Android, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null;md5f99670a967ca5f40091da02b64448d9f.ImageCircleRenderer
 ImageCircle.Forms.Plugin.Droid.ImageCircleRenderer;md5f99670a967ca5f40091da02b64448d9f.ImageCircleRenderer

@@ -2,13 +2,15 @@
 <Paths>
   <Jars></Jars>
   <ResolvedResourceDirectories>
-    <ResolvedResourceDirectory>C:\Projetos\git\EuAnonimo\euanon\euanon\euanon.Android\obj\Debug\__library_projects__\ImageCircle.Forms.Plugin.Android\library_project_imports\res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>C:\Projetos\git\EuAnonimo\euanon\euanon\euanon.Android\obj\Debug\__library_projects__\Microsoft.WindowsAzure.Mobile.Ext\library_project_imports\res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>C:\Projetos\git\EuAnonimo\euanon\euanon\euanon.Android\obj\Debug\__library_projects__\Plugin.Settings\library_project_imports\res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>C:\Projetos\git\EuAnonimo\euanon\euanon\euanon.Android\obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android\library_project_imports\res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>C:\Projetos\git\EuAnonimo\euanon\euanon\euanon.Android\obj\Debug\__library_projects__\Xamarin.Forms.Platform\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Projetos\git\EuAnon\euanon\euanon\euanon.Android\obj\Debug\__library_projects__\GCM.Client\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Projetos\git\EuAnon\euanon\euanon\euanon.Android\obj\Debug\__library_projects__\ImageCircle.Forms.Plugin.Android\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Projetos\git\EuAnon\euanon\euanon\euanon.Android\obj\Debug\__library_projects__\Microsoft.WindowsAzure.Mobile.Ext\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Projetos\git\EuAnon\euanon\euanon\euanon.Android\obj\Debug\__library_projects__\Plugin.Settings\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Projetos\git\EuAnon\euanon\euanon\euanon.Android\obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Projetos\git\EuAnon\euanon\euanon\euanon.Android\obj\Debug\__library_projects__\Xamarin.Forms.Platform\library_project_imports\res</ResolvedResourceDirectory>
   </ResolvedResourceDirectories>
   <ResolvedAssetDirectories>
+    <ResolvedAssetDirectory>obj\Debug\__library_projects__\GCM.Client\library_project_imports\assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj\Debug\__library_projects__\ImageCircle.Forms.Plugin.Android\library_project_imports\assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj\Debug\__library_projects__\Microsoft.WindowsAzure.Mobile.Ext\library_project_imports\assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj\Debug\__library_projects__\Plugin.Settings\library_project_imports\assets</ResolvedAssetDirectory>
@@ -17,10 +19,11 @@
   </ResolvedAssetDirectories>
   <ResolvedEnvironmentFiles />
   <ResolvedResourceDirectoryStamps>
-    <ResolvedResourceDirectoryStamp>C:\Projetos\git\EuAnonimo\euanon\euanon\euanon.Android\obj\Debug\__library_projects__\ImageCircle.Forms.Plugin.Android.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>C:\Projetos\git\EuAnonimo\euanon\euanon\euanon.Android\obj\Debug\__library_projects__\Microsoft.WindowsAzure.Mobile.Ext.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>C:\Projetos\git\EuAnonimo\euanon\euanon\euanon.Android\obj\Debug\__library_projects__\Plugin.Settings.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>C:\Projetos\git\EuAnonimo\euanon\euanon\euanon.Android\obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>C:\Projetos\git\EuAnonimo\euanon\euanon\euanon.Android\obj\Debug\__library_projects__\Xamarin.Forms.Platform.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Projetos\git\EuAnon\euanon\euanon\euanon.Android\obj\Debug\__library_projects__\GCM.Client.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Projetos\git\EuAnon\euanon\euanon\euanon.Android\obj\Debug\__library_projects__\ImageCircle.Forms.Plugin.Android.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Projetos\git\EuAnon\euanon\euanon\euanon.Android\obj\Debug\__library_projects__\Microsoft.WindowsAzure.Mobile.Ext.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Projetos\git\EuAnon\euanon\euanon\euanon.Android\obj\Debug\__library_projects__\Plugin.Settings.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Projetos\git\EuAnon\euanon\euanon\euanon.Android\obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Projetos\git\EuAnon\euanon\euanon\euanon.Android\obj\Debug\__library_projects__\Xamarin.Forms.Platform.stamp</ResolvedResourceDirectoryStamp>
   </ResolvedResourceDirectoryStamps>
 </Paths>

@@ -6,7 +6,14 @@
              BackgroundColor="#E0F7FA">
     <ContentPage.Content>
         <StackLayout Padding="60" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
-            <Label Text="Descubra"/>
+            <ListView IsPullToRefreshEnabled="True"
+                      RefreshCommand="{Binding Mensagem}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="Texto" Detail="Detail"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

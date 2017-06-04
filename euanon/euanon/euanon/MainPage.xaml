@@ -5,16 +5,6 @@
              x:Class="euanon.MainPage"
               Title="                           -Eu, Anônimo.">
     <MasterDetailPage.ToolbarItems>
-        <ToolbarItem Text="About"/>
+        <ToolbarItem Text="About" Command="{Binding About}"/>
     </MasterDetailPage.ToolbarItems>
-    <!--<MasterDetailPage.Master>
-        <local:MasterPage x:Name="masterPage" />
-    </MasterDetailPage.Master>
-    <MasterDetailPage.Detail>
-        <NavigationPage>
-            <x:Arguments>
-                <local:DetailPage />
-            </x:Arguments>
-        </NavigationPage>
-    </MasterDetailPage.Detail>-->
 </MasterDetailPage>

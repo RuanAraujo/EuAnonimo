@@ -4,18 +4,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Xamarin.Forms;
 
 namespace euanon.ViewModel
 {
     public class DescubraViewModel : BaseViewModel
     {
-        public string Token { get; set; }
-        public string UserId { get; set; }
+        public Command Mensagem;
 
         public DescubraViewModel()
         {
-            Token = Settings.AuthToken;
-            UserId = Settings.UserId;
+            Mensagem = new Command(() => EnviarMensagem());
+        }
+
+        async void EnviarMensagem()
+        {
+            await DisplayAlert("titulo", "Mensagem e tal", "OK");
         }
     }
 }

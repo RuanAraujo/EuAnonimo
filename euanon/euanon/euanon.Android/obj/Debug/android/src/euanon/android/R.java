@@ -2827,6 +2827,7 @@ containing a value of this type.
         public static final int appbar_scrolling_view_behavior=0x7f080023;
         public static final int bottom_sheet_behavior=0x7f080024;
         public static final int character_counter_pattern=0x7f080025;
+        public static final int library_name=0x7f080026;
         public static final int mr_button_content_description=0x7f080000;
         public static final int mr_chooser_searching=0x7f080001;
         public static final int mr_chooser_title=0x7f080002;

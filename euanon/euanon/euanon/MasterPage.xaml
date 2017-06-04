@@ -5,7 +5,7 @@
              x:Class="euanon.MasterPage"
              Title="Menu"
              Icon="hamburger.png"
-             BackgroundColor="#B2DFDB">
+             BackgroundColor="#E0F7FA">
     <ContentPage.Content>
         <ScrollView>
             <Grid RowSpacing="0" ColumnSpacing="0">
@@ -24,7 +24,7 @@
                 Aspect="AspectFill"
 				HorizontalOptions="FillAndExpand"
 				VerticalOptions ="FillAndExpand"/>
-                <StackLayout Grid.ColumnSpan="2">
+                <StackLayout Grid.ColumnSpan="2" Padding="0,20,0,0">
                     <controls:CircleImage Source="{Binding UserImage, Mode=OneWay}">
                         <controls:CircleImage.WidthRequest>
                             <OnPlatform x:TypeArguments="x:Double"

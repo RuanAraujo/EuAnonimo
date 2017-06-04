@@ -11,7 +11,7 @@
 namespace euanon {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Projetos\\git\\EuAnonimo\\euanon\\euanon\\euanon\\DescubraPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Projetos\\git\\EuAnon\\euanon\\euanon\\euanon\\DescubraPage.xaml")]
     public partial class DescubraPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

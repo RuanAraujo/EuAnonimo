@@ -11,7 +11,7 @@
 namespace euanon {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Projetos\\git\\EuAnonimo\\euanon\\euanon\\euanon\\LoginFace.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Projetos\\git\\EuAnon\\euanon\\euanon\\euanon\\LoginFace.xaml")]
     public partial class LoginFace : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

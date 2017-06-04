@@ -101,6 +101,7 @@ class MonoPackageManager_Resources {
 		"euanon.Android.dll",
 		"euanon.dll",
 		"FormsViewGroup.dll",
+		"GCM.Client.dll",
 		"ImageCircle.Forms.Plugin.Abstractions.dll",
 		"ImageCircle.Forms.Plugin.Android.dll",
 		"Microsoft.WindowsAzure.Mobile.dll",
