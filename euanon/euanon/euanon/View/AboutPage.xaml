@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="euanon.AboutPage"
+             BackgroundColor="#E0F7FA"
+             Title="Sobre">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Spacing="20">
+            <Image Source="logo2escrito.png" WidthRequest="180" HeightRequest="180"/>
+            <Label Text="Sem likes, sem shares, apenas nossa expressão, pura e sem segundas intenções." FontSize="Medium" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Margin="15"/>
+            <Label Text="Desenvolvido por Ruan Araújo - github.com/RuanAraujo/EuAnonimo" FontSize="Small" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Margin="15"/>
+            <Label Text="Versão BETA" FontSize="Micro" VerticalOptions="EndAndExpand" HorizontalOptions="Center"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

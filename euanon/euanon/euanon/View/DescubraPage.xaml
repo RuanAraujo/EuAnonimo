@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="euanon.DescubraPage"
+             Title="Descubra"
+             BackgroundColor="#E0F7FA">
+    <ContentPage.Content>
+        <StackLayout>
+            <!--<Frame BackgroundColor="Transparent" Padding="0">-->
+                <ListView SeparatorColor="CadetBlue"
+                      IsPullToRefreshEnabled="True"
+                      HasUnevenRows="True"
+                      IsRefreshing="{Binding IsBusy}"
+                      ItemsSource="{Binding Posts}"
+                      RefreshCommand="{Binding RefreshCommand}">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <!--<ViewCell Height="50">
+                            <StackLayout>
+                                <StackLayout Orientation="Horizontal">
+                                    <Image Source="{Binding Imagem}"/>
+                                    <Label Text="{Binding Titulo}"/>
+                                </StackLayout>
+                                <Label Text="{Binding Texto}"/>
+                            </StackLayout>                            
+                        </ViewCell>-->
+                            <TextCell Text="{Binding Titulo}" Detail="{Binding Texto}"/>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            <!--</Frame>-->
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
