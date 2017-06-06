@@ -11,7 +11,7 @@
 namespace euanon {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Projetos\\git\\EuAnon\\euanon\\euanon\\euanon\\DetailPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Projetos\\git\\EuAnon\\EuAnonimo\\euanon\\euanon\\euanon\\DetailPage.xaml")]
     public partial class DetailPage : global::Xamarin.Forms.TabbedPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

@@ -16,6 +16,13 @@ namespace euanon.ViewModel
 
         public string Title { get; set; }
 
+        private bool isBusy;
+        public bool IsBusy
+        {
+            get { return isBusy; }
+            set { isBusy = value; OnPropertyChanged(); }
+        }
+
         protected bool SetProperty<T>(ref T storage, T value, [CallerMemberName]string propertyName = null)
         {
             if (EqualityComparer<T>.Default.Equals(storage, value))

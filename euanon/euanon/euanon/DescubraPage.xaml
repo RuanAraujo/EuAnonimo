@@ -5,15 +5,30 @@
              Title="Descubra"
              BackgroundColor="#E0F7FA">
     <ContentPage.Content>
-        <StackLayout Padding="60" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
-            <ListView IsPullToRefreshEnabled="True"
-                      RefreshCommand="{Binding Mensagem}">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <TextCell Text="Texto" Detail="Detail"/>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+        <StackLayout>
+            <!--<Frame BackgroundColor="Transparent" Padding="0">-->
+                <ListView SeparatorColor="CadetBlue"
+                      IsPullToRefreshEnabled="True"
+                      HasUnevenRows="True"
+                      IsRefreshing="{Binding IsBusy}"
+                      ItemsSource="{Binding Posts}"
+                      RefreshCommand="{Binding RefreshCommand}">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <!--<ViewCell Height="50">
+                            <StackLayout>
+                                <StackLayout Orientation="Horizontal">
+                                    <Image Source="{Binding Imagem}"/>
+                                    <Label Text="{Binding Titulo}"/>
+                                </StackLayout>
+                                <Label Text="{Binding Texto}"/>
+                            </StackLayout>                            
+                        </ViewCell>-->
+                            <TextCell Text="{Binding Titulo}" Detail="{Binding Texto}"/>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            <!--</Frame>-->
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

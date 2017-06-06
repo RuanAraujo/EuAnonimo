@@ -10,6 +10,8 @@
   <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
   <uses-permission android:name="android.permission.WAKE_LOCK" />
   <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
   <application android:label="euanon.Android" android:name="android.app.Application" android:allowBackup="true" android:icon="@drawable/icon" android:debuggable="true">
     <activity android:configChanges="orientation|screenSize" android:icon="@drawable/icon" android:label="euanon" android:theme="@style/MainTheme.Stilo" android:name="md5a335de0d7c27bf54ffb55445214cd815.MainActivity">
       <intent-filter>
@@ -34,6 +36,7 @@
     <service android:name="md5196f0fd84b145128cde3f87d371d75fb.GcmService" />
     <activity android:label="Web Authenticator" android:name="md56beaf3ca16f9b29c56822643de3b05fa.FormAuthenticatorActivity" />
     <activity android:label="Web Authenticator" android:name="md56beaf3ca16f9b29c56822643de3b05fa.WebAuthenticatorActivity" />
+    <receiver android:enabled="true" android:label="Connectivity Plugin Broadcast Receiver" android:name="md531e46b185997765898cde66852db2a40.ConnectivityChangeBroadcastReceiver" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="euanon.Android.mono.MonoRuntimeProvider.__mono_init__" />
     <!--suppress ExportedReceiver-->
     <receiver android:name="mono.android.Seppuku">

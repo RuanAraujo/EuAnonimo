@@ -5,14 +5,14 @@
              Title="Poste"
              BackgroundColor="#E0F7FA">
     <ContentPage.Content>
-        <ScrollView>
+        <ScrollView >
             <StackLayout Padding="10" Spacing="40">
                 <Label Text="Se expresse de todas as formas, você estará anônimo! Mas lembre-se, se postar algo de má intenção, temos seu facebook como validação!" FontSize="Small"/>
-                <Entry Placeholder="Titulo.."/>
+                <Entry Placeholder="Titulo.." Text="{Binding Titulo}"/>
                 <Label Text="Escreva..." FontSize="Small"/>
-                <Editor HeightRequest="170" />
-                <Picker Title="Selecione uma categoria..." ItemsSource="{Binding Categorias}" />
-                <Button Text="Postar" BorderRadius="50" BackgroundColor="#80DEEA"/>
+                <Editor HeightRequest="170" Text="{Binding Texto}"/>
+                <Picker Title="Selecione uma categoria..." ItemsSource="{Binding Categorias}" SelectedItem="{Binding Categoria}"/>
+                <Button Text="Postar" BorderRadius="50" BackgroundColor="#80DEEA" Command="{Binding PostCommand}"/>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

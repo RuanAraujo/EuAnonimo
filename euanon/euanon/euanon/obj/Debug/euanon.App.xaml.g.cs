@@ -11,7 +11,7 @@
 namespace euanon {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Projetos\\git\\EuAnon\\euanon\\euanon\\euanon\\App.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Projetos\\git\\EuAnon\\EuAnonimo\\euanon\\euanon\\euanon\\App.xaml")]
     public partial class App : global::Xamarin.Forms.Application {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
