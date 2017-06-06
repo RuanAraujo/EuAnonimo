@@ -25,7 +25,7 @@ namespace euanon.ViewModel
             CleanLocalDataCommand = new Command(() => cleanLocalData());
             Posts = new ObservableCollection<Post>();
             _client = new Azure();
-
+            //Carregar();
         }
 
 
@@ -33,6 +33,19 @@ namespace euanon.ViewModel
         {
             await _client.CleanData();
         }
+        //public async void Carregar()
+        //{
+        //    IsBusy = true;
+        //    var result = await _client.GetPosts();
+
+        //    Posts.Clear();
+
+        //    foreach (var item in result)
+        //    {
+        //        Posts.Add(item);
+        //    }
+        //    IsBusy = false;
+        //}
 
         public async void Load()
         {

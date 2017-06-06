@@ -3,8 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:euanon"
              x:Class="euanon.MainPage"
-              Title="                           -Eu, Anônimo.">
-    <MasterDetailPage.ToolbarItems>
-        <ToolbarItem Text="About" Command="{Binding About}"/>
-    </MasterDetailPage.ToolbarItems>
+              Title="                           Eu, Anônimo.">
+    <MasterDetailPage.Master>
+        <local:MasterPage x:Name="masterPage" />
+    </MasterDetailPage.Master>
 </MasterDetailPage>

@@ -12,7 +12,7 @@
                 <Grid.RowDefinitions>
                     <RowDefinition Height="200"/>
                     <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="175"/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
@@ -44,9 +44,17 @@
                 <!--<Image Source="{Binding UserImage}"/>
                 <Label Text="{Binding UserName}" TextColor="#B2DFDB" Grid.Column="1" Grid.Row="0" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>-->
                 <StackLayout Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2">
+                    <ListView x:Name="listViewOpcoes" SeparatorVisibility="None" Margin="15,0,0,0">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ImageCell Text="{Binding Title}" TextColor="Black" ImageSource="{Binding IconSource}"/>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
                     <Button Text="Logout" BackgroundColor="#EF5350" Command="{Binding LogoutCommand}"/>
                 </StackLayout>
                 <StackLayout Grid.Row="1" Grid.ColumnSpan="2"  Padding="30">
+                    <Button Text="HOME" BackgroundColor="Transparent" Command="{Binding HomeCommand}"/>
                     <Label Text="Explore nossas categorias" FontSize="Medium"/>
                     <Frame BackgroundColor="Transparent" Padding="20">
                         <ListView x:Name="listView" VerticalOptions="Center" SeparatorVisibility="Default" HorizontalOptions="Center">

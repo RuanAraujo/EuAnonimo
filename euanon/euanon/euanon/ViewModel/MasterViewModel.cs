@@ -14,6 +14,7 @@ namespace euanon.ViewModel
     {
         AzureService azureService;
         public Command LogoutCommand { get; }
+        public Command HomeCommand { get; set; }
 
         private string _userName;
         public string UserName
@@ -37,11 +38,22 @@ namespace euanon.ViewModel
             navigation = navi;
             azureService = DependencyService.Get<AzureService>();
             LogoutCommand =  new Command(LogoutAsync);
+            HomeCommand = new Command(HomeAsync);
             UserImage = Settings.UserImage;
             name = Settings.UserName;
             UserName = "Olá "+ name + ", Seja bem vindo!";
         }
 
+        public async void HomeAsync()
+        {
+            
+            Application.Current.MainPage = new MainPage();
+            var mainPage = new LoginFace();
+
+            await navigation.PushAsync(mainPage);
+            RemovePageFromStack();
+        }
+        
         public async void LogoutAsync()
         {
             await azureService.LogoutAsync();

@@ -16,7 +16,6 @@ namespace euanon.ViewModel
         INavigation navigation;
 
 
-
         ICommand loginCommand;
 
         public ICommand LoginCommand => loginCommand ?? (loginCommand = new Command(async () => await ExecuteLoginCommandAsync()));

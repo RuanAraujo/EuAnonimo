@@ -14,35 +14,46 @@ namespace euanon
     public partial class MasterPage : ContentPage
     {
         public ListView ListView { get { return listView; } }
+        public ListView ListViewOpcoes { get { return listViewOpcoes; } }
         public MasterPage()
         {
             InitializeComponent();
 
             BindingContext = new MasterViewModel(Navigation);
 
-            var masterPageItems = new List<MasterPageItem>();
-            masterPageItems.Add(new MasterPageItem
+            var opcoes = new List<MasterPageItem>();
+            opcoes.Add(new MasterPageItem
+            {
+                Title = "About",
+                IconSource = "info.png",
+                TargetType = typeof(AboutPage)
+            });
+
+            //Categorias da page master
+            var categorias = new List<MasterPageItem>();
+            categorias.Add(new MasterPageItem
             {
                 Title = "Amor",
                 IconSource = "heart.png",
             });
-            masterPageItems.Add(new MasterPageItem
+            categorias.Add(new MasterPageItem
             {
                 Title = "Reflexão",
                 IconSource = "reflexao.png",
             });
-            masterPageItems.Add(new MasterPageItem
+            categorias.Add(new MasterPageItem
             {
                 Title = "Amizade",
                 IconSource = "amizade.png",
             });
-            masterPageItems.Add(new MasterPageItem
+            categorias.Add(new MasterPageItem
             {
                 Title = "Carinho",
                 IconSource = "afeicao.png",
             });
 
-            listView.ItemsSource = masterPageItems;
+            listView.ItemsSource = categorias;
+            listViewOpcoes.ItemsSource = opcoes;
         }
     }
 }
