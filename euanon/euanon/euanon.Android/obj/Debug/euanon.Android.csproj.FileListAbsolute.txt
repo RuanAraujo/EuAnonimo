@@ -323,3 +323,15 @@ C:\Projetos\git\EuAnon\EuAnonimo\euanon\euanon\euanon.Android\obj\Debug\res\draw
 C:\Projetos\git\EuAnon\EuAnonimo\euanon\euanon\euanon.Android\obj\Debug\res\drawable\icon.png
 C:\Projetos\git\EuAnon\EuAnonimo\euanon\euanon\euanon.Android\obj\Debug\R.cs.flag
 C:\Projetos\git\EuAnon\EuAnonimo\euanon\euanon\euanon.Android\obj\Debug\uploadflags.txt
+C:\Projetos\git\EuAnon\EuAnonimo\euanon\euanon\euanon.Android\bin\Debug\euanon.dll.mdb
+C:\Projetos\git\EuAnon\EuAnonimo\euanon\euanon\euanon.Android\bin\Debug\euanon.Android.dll.mdb
+C:\Projetos\git\EuAnon\EuAnonimo\euanon\euanon\euanon.Android\obj\Debug\android\assets\euanon.Android.dll.mdb
+C:\Projetos\git\EuAnon\EuAnonimo\euanon\euanon\euanon.Android\obj\Debug\android\assets\euanon.dll.mdb
+C:\Projetos\git\EuAnon\EuAnonimo\euanon\euanon\euanon.Android\obj\Debug\android\assets\FormsViewGroup.dll.mdb
+C:\Projetos\git\EuAnon\EuAnonimo\euanon\euanon\euanon.Android\obj\Debug\android\assets\ImageCircle.Forms.Plugin.Abstractions.dll.mdb
+C:\Projetos\git\EuAnon\EuAnonimo\euanon\euanon\euanon.Android\obj\Debug\android\assets\ImageCircle.Forms.Plugin.Android.dll.mdb
+C:\Projetos\git\EuAnon\EuAnonimo\euanon\euanon\euanon.Android\obj\Debug\android\assets\Plugin.Connectivity.Abstractions.dll.mdb
+C:\Projetos\git\EuAnon\EuAnonimo\euanon\euanon\euanon.Android\obj\Debug\android\assets\Plugin.Connectivity.dll.mdb
+C:\Projetos\git\EuAnon\EuAnonimo\euanon\euanon\euanon.Android\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
+C:\Projetos\git\EuAnon\EuAnonimo\euanon\euanon\euanon.Android\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
+C:\Projetos\git\EuAnon\EuAnonimo\euanon\euanon\euanon.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
