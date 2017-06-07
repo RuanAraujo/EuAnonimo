@@ -54,12 +54,16 @@ namespace euanon.ViewModel
             {
                 if(await LoginAsync())
                 {
-
+                    IsBusy = true;
                     Application.Current.MainPage = new MainPage();
                     var mainPage = new MainPage();
 
+                    
                     await navigation.PushAsync(mainPage);
+                    
                     RemovePageFromStack();
+                    IsBusy = false;
+
                 }
             }
             catch (System.Exception)

@@ -5,7 +5,7 @@
              Title="Poste"
              BackgroundColor="#E0F7FA">
     <ContentPage.Content>
-        <ScrollView >
+        <ScrollView>
             <StackLayout Padding="10" Spacing="40">
                 <Label Text="Se expresse de todas as formas, você estará anônimo! Mas lembre-se, se postar algo de má intenção, temos seu facebook como validação!" FontSize="Small"/>
                 <Entry Placeholder="Titulo.." Text="{Binding Titulo}"/>

@@ -39,14 +39,14 @@ namespace euanon.ViewModel
             post.Titulo = this.Titulo;
             post.Texto = this.Texto;
 
-            await DisplayAlert("Postando..", "Estamos postando " + this.Titulo + " Aguarde", "Ok");
+            //await DisplayAlert("Postando..", "Estamos postando " + this.Titulo + " Aguarde", "Ok");
             azure.AddPost(post);
             
             IsBusy = false;
-            await DisplayAlert("Postando..", this.Titulo + " Postado", "Ok");
+            /*await DisplayAlert("Postando..", this.Titulo + " Postado", "Ok");
             this.Titulo = string.Empty;
             this.Texto = string.Empty;
-            this.Categoria = null;
+            this.Categoria = null;*/
         }
 
         public void listarCategorias()
