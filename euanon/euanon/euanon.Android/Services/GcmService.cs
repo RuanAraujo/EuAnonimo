@@ -16,6 +16,7 @@ using Newtonsoft.Json.Linq;
 using System.Diagnostics;
 using Android.Support.V4.App;
 using Android.Media;
+using Android.Graphics;
 
 [assembly: Permission(Name = "@PACKAGE_NAME@.permission.C2D_MESSAGE")]
 [assembly: UsesPermission(Name = "@PACKAGE_NAME@.permission.C2D_MESSAGE")]
@@ -103,7 +104,7 @@ namespace euanon.Droid.Services
 
             if (!string.IsNullOrEmpty(message))
             {
-                CreateNotification("Push", message);
+                CreateNotification("Olá Anônimo!", message);
                 return;
             }
 
@@ -142,7 +143,8 @@ namespace euanon.Droid.Services
             //we use the pending intent, passing our ui intent over which will get called
             //when the notification is tapped.
             var notification = builder.SetContentIntent(PendingIntent.GetActivity(this, 0, uiIntent, 0))
-                    .SetSmallIcon(Android.Resource.Drawable.SymActionEmail)
+                    //.SetSmallIcon(Android.Resource.Drawable.SymActionEmail)
+                    .SetSmallIcon(Resource.Drawable.icon)
                     .SetTicker(title)
                     .SetContentTitle(title)
                     .SetContentText(desc)
