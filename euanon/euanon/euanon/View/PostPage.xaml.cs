@@ -18,5 +18,10 @@ namespace euanon
             InitializeComponent();
             BindingContext = new PostViewModel();
         }
+        public void limparCampos()
+        {
+            edtTexto.Text = string.Empty;
+            etrTitulo.Text = string.Empty;
+        }
     }
 }

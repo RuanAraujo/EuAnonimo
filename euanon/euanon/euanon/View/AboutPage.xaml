@@ -5,11 +5,25 @@
              BackgroundColor="#E0F7FA"
              Title="Sobre">
     <ContentPage.Content>
-        <StackLayout HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Spacing="20">
-            <Image Source="logo2escrito.png" WidthRequest="180" HeightRequest="180"/>
-            <Label Text="Sem likes, sem shares, apenas nossa expressão, pura e sem segundas intenções." FontSize="Medium" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Margin="15"/>
-            <Label Text="Desenvolvido por Ruan Araújo - github.com/RuanAraujo/EuAnonimo" FontSize="Small" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Margin="15"/>
-            <Label Text="Versão BETA" FontSize="Micro" VerticalOptions="EndAndExpand" HorizontalOptions="Center"/>
-        </StackLayout>
+        <ScrollView>
+
+            <StackLayout Padding="20">
+
+                <Image Source="logo2escrito.png" WidthRequest="180" HeightRequest="180"/>
+                <Label Text="Sem likes, sem shares, apenas nossa expressão, pura e sem segundas intenções." FontSize="Medium" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Margin="15"/>
+                <Label Text="Eu, Anônimo" FontSize="Medium" TextColor="Silver" HorizontalOptions="Center" VerticalOptions="Center"/>
+                <Label Text="Já teve bastante vontade de postar aquele poema que escreveu, mas teve vergonha? Vergonha de se expressar de forma livre? Bom, com o Eu, Anonimo leia poemas de poetas iguais a você, pode ser seu vizinho, seu amigo, ou seu primo, as possibilidades são infinitas! Simples e fácil, se expresse!" FontSize="Small"/>
+                <Label Text="Por: Eu, Anônimo." FontSize="Micro"/>
+
+                <!--Termos e condições-->
+                <Label Text="Termos e Condições" FontSize="Medium" TextColor="Silver" HorizontalOptions="Center" VerticalOptions="Center"/>
+                <Label Text=">Iremos usar seu Facebook apenas para validação, adquirir avatar e nome, e para evitar spams." FontSize="Micro" Margin="15,10,0,0"/>
+                <Label Text=">O usuário que postar algo que incite violência de forma gratuita e ofensiva, será banido permanentemente do aplicativo sem aviso prévio." FontSize="Micro" Margin="15,01,0,0"/>
+                <Label Text=">Ao postar, seu texto será de domínio público." FontSize="Micro" Margin="15,01,0,0"/>
+                <Label Text="Desenvolvido por Ruan Araújo - github.com/RuanAraujo/EuAnonimo" FontSize="Micro" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Margin="25,25,25,0"/>
+                <Label Text="Versão BETA" FontSize="Micro" VerticalOptions="EndAndExpand" HorizontalOptions="Center"/>
+
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

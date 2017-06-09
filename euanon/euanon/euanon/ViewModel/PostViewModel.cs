@@ -13,26 +13,31 @@ namespace euanon.ViewModel
     public class PostViewModel : BaseViewModel
     {
         public List<string> Categorias { get; set; }
+        public bool Entendi { get; set; }
         public string Titulo { get; set; }
         public string Texto { get; set; }
         public string Categoria { get; set; }
-        //public Command PostCommand;
         ICommand postCommand;
         public ICommand PostCommand => postCommand ?? (postCommand = new Command(async () => await ExecutePostCommand()));
         Azure azure;
         Post post;
-
         public PostViewModel()
         {
             listarCategorias();
-            //postCommand = new Command(() => ExecutePostCommand());
             azure = new Azure();
+            Entendi = false;
         }
 
         async Task ExecutePostCommand()
         {
             if (IsBusy)
                 return;
+            if (verificaCampos())
+            {
+                await DisplayAlert("ERRO", "Verifique os campos e tente novamente!", "OK");
+                return;
+            }
+                
             IsBusy = true;
             post = new Post();
             post.Categoria = this.Categoria;
@@ -43,10 +48,21 @@ namespace euanon.ViewModel
             azure.AddPost(post);
             
             IsBusy = false;
-            /*await DisplayAlert("Postando..", this.Titulo + " Postado", "Ok");
+            await DisplayAlert("Postado", this.Titulo + " Postado", "Ok");
+
             this.Titulo = string.Empty;
             this.Texto = string.Empty;
-            this.Categoria = null;*/
+            this.Categoria = null;
+            
+
+        }
+        public bool verificaCampos()
+        {
+            if(Titulo == null || Texto == null || Categoria == null || Entendi == false)
+            {
+                 return true;
+            }
+            return false;      
         }
 
         public void listarCategorias()
@@ -55,7 +71,7 @@ namespace euanon.ViewModel
             Categorias.Add("Amor");
             Categorias.Add("Reflexao");
             Categorias.Add("Amizade");
-            Categorias.Add("Afeição");
+            Categorias.Add("Carinho");
         }
        
         

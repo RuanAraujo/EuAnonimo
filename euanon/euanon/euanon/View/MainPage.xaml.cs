@@ -19,10 +19,19 @@ namespace euanon
             Detail = new NavigationPage(new DetailPage());
 
             masterPage.ListView.ItemSelected += OnItemSelected;
-            masterPage.ListViewOpcoes.ItemSelected += OnItemSelected;
+            masterPage.ListViewOpcoes.ItemSelected += OnOpcaoSelected;
         }
 
-        
+        void OnOpcaoSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            var item = e.SelectedItem as MasterPageItem;
+            if (item != null)
+            {
+                Detail = new NavigationPage((Page)Activator.CreateInstance(item.TargetType));
+                masterPage.ListViewOpcoes.SelectedItem = null;
+                IsPresented = false;
+            }
+        }
 
         void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
@@ -31,7 +40,7 @@ namespace euanon
             {
                 Detail = new NavigationPage((Page)Activator.CreateInstance(item.TargetType));
                 masterPage.ListView.SelectedItem = null;
-                IsPresented = true;
+                IsPresented = false;
             }
         }
     }

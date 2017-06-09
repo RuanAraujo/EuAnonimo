@@ -42,11 +42,7 @@ namespace euanon.Services
                 return empty;
             }
         }
-
-        //public async void AddPost(Post post)
-        //{
-        //    await _table.InsertAsync(post);
-        //}
+        
         public async void AddPost(Post post)
         {
             if (Plugin.Connectivity.CrossConnectivity.Current.IsConnected)

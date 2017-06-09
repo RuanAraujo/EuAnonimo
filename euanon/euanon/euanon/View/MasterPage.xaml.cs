@@ -1,10 +1,6 @@
-﻿using euanon.ViewModel;
-using System;
+﻿using euanon.View;
+using euanon.ViewModel;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -24,9 +20,15 @@ namespace euanon
             var opcoes = new List<MasterPageItem>();
             opcoes.Add(new MasterPageItem
             {
-                Title = "About",
+                Title = "Sobre",
                 IconSource = "info.png",
                 TargetType = typeof(AboutPage)
+            });
+            opcoes.Add(new MasterPageItem
+            {
+                Title = "Configurações",
+                IconSource = "config.png",
+                TargetType = typeof(ConfiguracaoPage)
             });
 
             //Categorias da page master
@@ -35,21 +37,25 @@ namespace euanon
             {
                 Title = "Amor",
                 IconSource = "heart.png",
+                TargetType = typeof(CategoriaPage)
             });
             categorias.Add(new MasterPageItem
             {
                 Title = "Reflexão",
                 IconSource = "reflexao.png",
+                TargetType = typeof(CategoriaPage)
             });
             categorias.Add(new MasterPageItem
             {
                 Title = "Amizade",
                 IconSource = "amizade.png",
+                TargetType = typeof(CategoriaPage)
             });
             categorias.Add(new MasterPageItem
             {
                 Title = "Carinho",
                 IconSource = "afeicao.png",
+                TargetType = typeof(CategoriaPage)
             });
 
             listView.ItemsSource = categorias;
