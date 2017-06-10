@@ -15,7 +15,7 @@ namespace euanon.Model
                 Imagem = "heart.png";
             else if (categoria == "Carinho")
                 Imagem = "afeicao.png";
-            else if (categoria == "Reflexao")
+            else if (categoria == "Reflexão")
                 Imagem = "reflexao.png";
             else if (categoria == "Amizade")
                 Imagem = "amizade.png";

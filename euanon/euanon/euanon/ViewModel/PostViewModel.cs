@@ -69,7 +69,7 @@ namespace euanon.ViewModel
         {
             Categorias = new List<string>();
             Categorias.Add("Amor");
-            Categorias.Add("Reflexao");
+            Categorias.Add("Reflexão");
             Categorias.Add("Amizade");
             Categorias.Add("Carinho");
         }

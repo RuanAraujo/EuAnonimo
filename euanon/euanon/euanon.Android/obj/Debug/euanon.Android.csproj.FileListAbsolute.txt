@@ -232,7 +232,6 @@ C:\Projetos\git\EuAnon\euanon\euanon\euanon.Android\obj\Debug\android\assets\Ima
 C:\Projetos\git\EuAnon\euanon\euanon\euanon.Android\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
 C:\Projetos\git\EuAnon\euanon\euanon\euanon.Android\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Projetos\git\EuAnon\euanon\euanon\euanon.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
-C:\Projetos\git\EuAnon\EuAnonimo\euanon\euanon\euanon.Android\obj\Debug\euanon.Android.csprojResolveAssemblyReference.cache
 C:\Projetos\git\EuAnon\EuAnonimo\euanon\euanon\euanon.Android\bin\Debug\euanon.Android.dll.config
 C:\Projetos\git\EuAnon\EuAnonimo\euanon\euanon\euanon.Android\bin\Debug\euanon.Android.dll
 C:\Projetos\git\EuAnon\EuAnonimo\euanon\euanon\euanon.Android\bin\Debug\euanon.Android.pdb
@@ -302,6 +301,7 @@ C:\Projetos\git\EuAnon\EuAnonimo\euanon\euanon\euanon.Android\bin\Debug\Xamarin.
 C:\Projetos\git\EuAnon\EuAnonimo\euanon\euanon\euanon.Android\bin\Debug\Xamarin.Forms.Xaml.pdb
 C:\Projetos\git\EuAnon\EuAnonimo\euanon\euanon\euanon.Android\bin\Debug\Xamarin.Forms.Xaml.xml
 C:\Projetos\git\EuAnon\EuAnonimo\euanon\euanon\euanon.Android\bin\Debug\Xamarin.Forms.Xaml.dll.mdb
+C:\Projetos\git\EuAnon\EuAnonimo\euanon\euanon\euanon.Android\obj\Debug\euanon.Android.csprojResolveAssemblyReference.cache
 C:\Projetos\git\EuAnon\EuAnonimo\euanon\euanon\euanon.Android\obj\Debug\euanon.Android.dll
 C:\Projetos\git\EuAnon\EuAnonimo\euanon\euanon\euanon.Android\obj\Debug\euanon.Android.pdb
 C:\Projetos\git\EuAnon\EuAnonimo\euanon\euanon\euanon.Android\obj\Debug\android\bin\euanon.Android.apk

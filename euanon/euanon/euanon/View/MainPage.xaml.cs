@@ -1,4 +1,5 @@
-﻿using euanon.ViewModel;
+﻿using euanon.View;
+using euanon.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -32,13 +33,14 @@ namespace euanon
                 IsPresented = false;
             }
         }
-
         void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             var item = e.SelectedItem as MasterPageItem;
+           
             if (item != null)
             {
-                Detail = new NavigationPage((Page)Activator.CreateInstance(item.TargetType));
+                var categoria = item.Title;
+                Detail = new NavigationPage(new CategoriaPage(categoria));
                 masterPage.ListView.SelectedItem = null;
                 IsPresented = false;
             }

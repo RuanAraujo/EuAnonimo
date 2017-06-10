@@ -24,20 +24,14 @@ namespace euanon.ViewModel
         public DescubraViewModel()
         {
             RefreshCommand = new Command(() => Load());
-            CleanLocalDataCommand = new Command(async ()  => await cleanLocalData());
             Posts = new ObservableCollection<Post>();
             ItemCommand = new Command<Post>(Item);
             _client = new Azure();
             Load();
         }
-
         public async void Item(Post post)
         {
             await DisplayAlert(post.Titulo, post.Texto, "OK");
-        }
-        async Task cleanLocalData()
-        {
-            await _client.CleanData();
         }
 
         public async void Load()
@@ -53,6 +47,6 @@ namespace euanon.ViewModel
             }
             IsBusy = false;
         }
-
+        
     }
 }
