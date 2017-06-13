@@ -1,4 +1,5 @@
 ﻿using euanon.Helpers;
+using euanon.View;
 using System;
 using System.Collections.Generic;
 using System.Linq;

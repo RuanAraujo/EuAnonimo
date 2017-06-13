@@ -53,7 +53,7 @@
                             </DataTemplate>
                         </ListView.ItemTemplate>
                     </ListView>
-                    <Button Text="Logout" BackgroundColor="#EF5350" Command="{Binding LogoutCommand}"/>
+                    <Button Text="Sair" BackgroundColor="#EF5350" Command="{Binding LogoutCommand}"/>
                 </StackLayout>
                 <StackLayout Grid.Row="1" Grid.ColumnSpan="2"  Padding="30">
                     <ListView VerticalOptions="Center" SeparatorVisibility="Default" HorizontalOptions="Center" Margin="15,0,0,0" x:Name="homeView">

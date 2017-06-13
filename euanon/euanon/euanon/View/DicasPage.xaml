@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CarouselPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="euanon.View.DicasPage"
+              BackgroundColor="#E0F7FA">
+    <ContentPage>
+        <StackLayout Padding="45">
+            <Label Text="Passe para o lado para nossas dicas →" HorizontalOptions="End" VerticalOptions="CenterAndExpand" FontSize="Micro" TextColor="Gray"/>
+            <Label Text="Bem vindo!" FontSize="Medium" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
+            <Image Source="logo2escrito.png" WidthRequest="180" HeightRequest="180"/>
+            <Label Text="Sem likes, sem shares, apenas nossa expressão, pura e sem segundas intenções." FontSize="Small" VerticalOptions="CenterAndExpand" HorizontalOptions="Center"/>
+            <Label Text="Já teve bastante vontade de postar aquele poema que escreveu, mas teve vergonha? Vergonha de se expressar de forma livre? Bom, com o Eu, Anonimo leia poemas de poetas iguais a você, pode ser seu vizinho, seu amigo, ou seu primo, as possibilidades são infinitas! Simples e fácil, se expresse!" FontSize="Micro" VerticalOptions="CenterAndExpand" HorizontalOptions="Center"/>
+            <Label Text="Por: Eu, Anônimo." FontSize="Micro" VerticalOptions="CenterAndExpand" HorizontalOptions="Center"/>
+        </StackLayout>
+    </ContentPage>
+    <ContentPage>
+        <ScrollView>
+                <Grid RowSpacing="0" ColumnSpacing="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="150"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <StackLayout Grid.ColumnSpan="2">
+                    <Label Text="Passe para o lado para mais dicas. Dica 1/3 →" HorizontalOptions="End" VerticalOptions="CenterAndExpand" FontSize="Micro" TextColor="Gray" Grid.Column="1" Margin="15"/>
+                        <Label Text="Descubre, Poste!" FontSize="Medium" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Grid.ColumnSpan="2"/>
+                    </StackLayout>
+                    <StackLayout Grid.Column="0" Grid.Row="1" Padding="5">
+                        <Label Text="A página Descubra contém todos os posts, de todas as categorias!" FontSize="Small" Grid.Row="1" Grid.Column="0"/>
+                        <Image Source="descubra2.png" Grid.Row="2" Grid.Column="0"/>
+                    </StackLayout>
+                    <StackLayout Grid.Column="1" Grid.Row="1" Padding="5">
+                        <Label Text="Poste é a página que usará para se expressar!" FontSize="Small" Grid.Column="1" Grid.Row="1"/>
+                        <Image Source="poste2.png" Grid.Column="1" Grid.Row="2"/>
+                    <Button Text="Pular dicas" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="Transparent" Command="{Binding ComecarCommand}" />
+                    </StackLayout>
+                </Grid>
+            </ScrollView>
+    </ContentPage>
+    <ContentPage>
+        <ScrollView>
+            <Grid RowSpacing="0" ColumnSpacing="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="150"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <StackLayout Grid.ColumnSpan="2">
+                    <Label Text="Passe para o lado para mais dicas. Dica 2/3 →" HorizontalOptions="End" VerticalOptions="CenterAndExpand" FontSize="Micro" TextColor="Gray" Grid.Column="1" Margin="15"/>
+                    <Label Text="Interaja!" FontSize="Medium" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Grid.ColumnSpan="2"/>
+                </StackLayout>
+                <StackLayout Grid.Column="0" Grid.Row="1" Padding="5">
+                    <Label Text="Para visualizar o post completo, aperte nele!" FontSize="Small" Grid.Row="1" Grid.Column="0"/>
+                    <Image Source="detalhes2.png" Grid.Row="2" Grid.Column="0"/>
+                </StackLayout>
+                <StackLayout Grid.Column="1" Grid.Row="1" Padding="5">
+                    <Label Text="Aperte e segure para mais opções como compartilhar ou denunciar!" FontSize="Small" Grid.Column="1" Grid.Row="1"/>
+                    <Image Source="selecao2.png" Grid.Column="1" Grid.Row="2"/>
+                    <Button Text="Pular dicas" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="Transparent" Command="{Binding ComecarCommand}"/>
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+    </ContentPage>
+    <ContentPage>
+        <ScrollView>
+            <Grid RowSpacing="0" ColumnSpacing="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="150"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <StackLayout Grid.ColumnSpan="2">
+                    <Label Text="Passe para o lado para mais dicas. Dica 3/3 →" HorizontalOptions="End" VerticalOptions="CenterAndExpand" FontSize="Micro" TextColor="Gray" Grid.Column="1" Margin="15"/>
+                    <Label Text="Navegue!" FontSize="Medium" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Grid.ColumnSpan="2"/>
+                </StackLayout>
+                <StackLayout Grid.Column="0" Grid.Row="1" Padding="2">
+                    <Label Text="Nosso menu lateral possui sua foto e seu nome (concebido pelo Facebook)." FontSize="Small" Grid.Row="1" Grid.Column="0"/>
+                    <Image Source="menu12.png" Grid.Row="2" Grid.Column="0"/>
+                </StackLayout>
+                <StackLayout Grid.Column="1" Grid.Row="1" Padding="5">
+                    <Label Text="Temos nossas categorias, sobre e configurações, navegue a vontade!" FontSize="Small" Grid.Column="1" Grid.Row="1"/>
+                    <Image Source="menu22.png" Grid.Column="1" Grid.Row="2"/>
+                    <Button Text="Começar" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="Transparent" Command="{Binding ComecarCommand}" />
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+    </ContentPage>
+</CarouselPage>

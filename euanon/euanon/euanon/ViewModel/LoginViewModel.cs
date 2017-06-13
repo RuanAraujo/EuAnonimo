@@ -1,5 +1,6 @@
 ﻿using euanon.Helpers;
 using euanon.Services;
+using euanon.View;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Input;
@@ -12,7 +13,7 @@ namespace euanon.ViewModel
         AzureService azureService;
         INavigation navigation;
 
-
+        public bool MostrarDica { get; set; }
         ICommand loginCommand;
 
         public ICommand LoginCommand => loginCommand ?? (loginCommand = new Command(async () => await ExecuteLoginCommandAsync()));
@@ -29,11 +30,19 @@ namespace euanon.ViewModel
                 if(await LoginAsync())
                 {
                     IsBusy = true;
-                    Application.Current.MainPage = new MainPage();
-                    var mainPage = new MainPage();
-
+                    if (MostrarDica)
+                    {
+                        Application.Current.MainPage = new DicasPage();
+                        var mainPage = new DicasPage();
+                        await navigation.PushAsync(mainPage);
+                    }
+                    else
+                    {
+                        Application.Current.MainPage = new MainPage();
+                        var mainPage = new MainPage();
+                        await navigation.PushAsync(mainPage);
+                    }
                     
-                    await navigation.PushAsync(mainPage);
                     
                     RemovePageFromStack();
                     IsBusy = false;
@@ -56,10 +65,15 @@ namespace euanon.ViewModel
                     navigation.RemovePage(page);
             }
         }
+
         public Task<bool> LoginAsync()
         {
             if (Settings.IsLoggedIn)
+            {
+                MostrarDica = false;
                 return Task.FromResult(true);
+            }
+            MostrarDica = true;    
             return azureService.LoginAsync();
         }
     }

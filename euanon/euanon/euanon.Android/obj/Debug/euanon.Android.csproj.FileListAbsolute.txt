@@ -338,3 +338,10 @@ C:\Projetos\git\EuAnon\EuAnonimo\euanon\euanon\euanon.Android\obj\Debug\android\
 C:\Projetos\git\EuAnon\EuAnonimo\euanon\euanon\euanon.Android\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
 C:\Projetos\git\EuAnon\EuAnonimo\euanon\euanon\euanon.Android\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Projetos\git\EuAnon\EuAnonimo\euanon\euanon\euanon.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
+C:\Projetos\git\EuAnon\EuAnonimo\euanon\euanon\euanon.Android\obj\Debug\res\drawable\descubra1.png
+C:\Projetos\git\EuAnon\EuAnonimo\euanon\euanon\euanon.Android\obj\Debug\res\drawable\descubra2.png
+C:\Projetos\git\EuAnon\EuAnonimo\euanon\euanon\euanon.Android\obj\Debug\res\drawable\poste2.png
+C:\Projetos\git\EuAnon\EuAnonimo\euanon\euanon\euanon.Android\obj\Debug\res\drawable\detalhes2.png
+C:\Projetos\git\EuAnon\EuAnonimo\euanon\euanon\euanon.Android\obj\Debug\res\drawable\selecao2.png
+C:\Projetos\git\EuAnon\EuAnonimo\euanon\euanon\euanon.Android\obj\Debug\res\drawable\menu12.png
+C:\Projetos\git\EuAnon\EuAnonimo\euanon\euanon\euanon.Android\obj\Debug\res\drawable\menu22.png

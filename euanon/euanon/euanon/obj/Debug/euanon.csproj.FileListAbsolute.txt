@@ -142,6 +142,7 @@ C:\Projetos\git\EuAnon\EuAnonimo\euanon\euanon\euanon\obj\Debug\euanon.View.Logi
 C:\Projetos\git\EuAnon\EuAnonimo\euanon\euanon\euanon\obj\Debug\euanon.View.AboutPage.xaml.g.cs
 C:\Projetos\git\EuAnon\EuAnonimo\euanon\euanon\euanon\obj\Debug\euanon.View.CategoriaPage.xaml.g.cs
 C:\Projetos\git\EuAnon\EuAnonimo\euanon\euanon\euanon\obj\Debug\euanon.View.ConfiguracaoPage.xaml.g.cs
+C:\Projetos\git\EuAnon\EuAnonimo\euanon\euanon\euanon\obj\Debug\euanon.View.DicasPage.xaml.g.cs
 C:\Projetos\git\EuAnon\EuAnonimo\euanon\euanon\euanon\obj\Debug\euanon.dll
 C:\Projetos\git\EuAnon\EuAnonimo\euanon\euanon\euanon\obj\Debug\euanon.pdb
 C:\Projetos\git\EuAnon\EuAnonimo\euanon\euanon\euanon\obj\Debug\euanon.csprojResolveAssemblyReference.cache
