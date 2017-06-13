@@ -1,4 +1,5 @@
-﻿using System;
+﻿using euanon.Helpers;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,7 +14,10 @@ namespace euanon
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new LoginFace());
+            if (Settings.IsLoggedIn)
+                MainPage = new MainPage();
+            else
+                MainPage = new NavigationPage(new LoginFace());
         }
 
         protected override void OnStart()

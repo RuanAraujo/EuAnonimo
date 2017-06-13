@@ -47,7 +47,6 @@ namespace euanon.ViewModel
 
         }
 
-
         private void RemovePageFromStack()
         {
             var existingPages = navigation.NavigationStack.ToList();

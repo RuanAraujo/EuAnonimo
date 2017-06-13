@@ -13,7 +13,7 @@
                 <Editor HeightRequest="170" Text="{Binding Texto}" x:Name="edtTexto" />
                 <Picker Title="Selecione uma categoria..." ItemsSource="{Binding Categorias}" SelectedItem="{Binding Categoria}"/>
                 <StackLayout Orientation="Horizontal">
-                    <Label Text="Li sobre os termos e condições na parte Sobre e concordo todos os termos."/>
+                    <Label Text="Li sobre todos  os termos e condições na aba Sobre e concordo com todos os termos."/>
                     <Switch IsToggled="{Binding Entendi}"/>
                 </StackLayout>
                 <Button Text="Postar" BorderRadius="50" BackgroundColor="Transparent" Command="{Binding PostCommand}"/>
