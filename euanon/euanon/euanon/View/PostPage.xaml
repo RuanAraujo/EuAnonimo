@@ -5,14 +5,18 @@
              Title="Poste"
              BackgroundColor="#E0F7FA">
     <ContentPage.Content>
-        <ScrollView >
-            <StackLayout Padding="10" Spacing="40">
+        <ScrollView>
+            <StackLayout Padding="10">
                 <Label Text="Se expresse de todas as formas, você estará anônimo! Mas lembre-se, se postar algo de má intenção, temos seu facebook como validação!" FontSize="Small"/>
-                <Entry Placeholder="Titulo.." Text="{Binding Titulo}"/>
+                <Entry Placeholder="Titulo.." Text="{Binding Titulo}" x:Name="etrTitulo"/>
                 <Label Text="Escreva..." FontSize="Small"/>
-                <Editor HeightRequest="170" Text="{Binding Texto}"/>
+                <Editor HeightRequest="170" Text="{Binding Texto}" x:Name="edtTexto" />
                 <Picker Title="Selecione uma categoria..." ItemsSource="{Binding Categorias}" SelectedItem="{Binding Categoria}"/>
-                <Button Text="Postar" BorderRadius="50" BackgroundColor="#80DEEA" Command="{Binding PostCommand}"/>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Li sobre todos  os termos e condições na aba Sobre e concordo com todos os termos."/>
+                    <Switch IsToggled="{Binding Entendi}"/>
+                </StackLayout>
+                <Button Text="Postar" BorderRadius="50" BackgroundColor="Transparent" Command="{Binding PostCommand}"/>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

@@ -321,6 +321,9 @@ C:\Projetos\git\EuAnon\EuAnonimo\euanon\euanon\euanon.Android\obj\Debug\res\draw
 C:\Projetos\git\EuAnon\EuAnonimo\euanon\euanon\euanon.Android\obj\Debug\res\drawable-xhdpi\icon.png
 C:\Projetos\git\EuAnon\EuAnonimo\euanon\euanon\euanon.Android\obj\Debug\res\drawable-xxhdpi\icon.png
 C:\Projetos\git\EuAnon\EuAnonimo\euanon\euanon\euanon.Android\obj\Debug\res\drawable\icon.png
+C:\Projetos\git\EuAnon\EuAnonimo\euanon\euanon\euanon.Android\obj\Debug\res\drawable\config.png
+C:\Projetos\git\EuAnon\EuAnonimo\euanon\euanon\euanon.Android\obj\Debug\res\drawable\home.png
+C:\Projetos\git\EuAnon\EuAnonimo\euanon\euanon\euanon.Android\obj\Debug\res\drawable\share.png
 C:\Projetos\git\EuAnon\EuAnonimo\euanon\euanon\euanon.Android\obj\Debug\R.cs.flag
 C:\Projetos\git\EuAnon\EuAnonimo\euanon\euanon\euanon.Android\obj\Debug\uploadflags.txt
 C:\Projetos\git\EuAnon\EuAnonimo\euanon\euanon\euanon.Android\bin\Debug\euanon.dll.mdb

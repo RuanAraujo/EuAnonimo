@@ -1,4 +1,5 @@
-﻿using euanon.ViewModel;
+﻿using euanon.View;
+using euanon.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,19 +20,41 @@ namespace euanon
             Detail = new NavigationPage(new DetailPage());
 
             masterPage.ListView.ItemSelected += OnItemSelected;
-            masterPage.ListViewOpcoes.ItemSelected += OnItemSelected;
+            masterPage.ListViewOpcoes.ItemSelected += OnOpcaoSelected;
+            masterPage.HomeView.ItemSelected += HomeView_ItemSelected;
         }
 
-        
-
-        void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
+        private void HomeView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             var item = e.SelectedItem as MasterPageItem;
             if (item != null)
             {
                 Detail = new NavigationPage((Page)Activator.CreateInstance(item.TargetType));
+                masterPage.HomeView.SelectedItem = null;
+                IsPresented = false;
+            }
+        }
+
+        void OnOpcaoSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            var item = e.SelectedItem as MasterPageItem;
+            if (item != null)
+            {
+                Detail = new NavigationPage((Page)Activator.CreateInstance(item.TargetType));
+                masterPage.ListViewOpcoes.SelectedItem = null;
+                IsPresented = false;
+            }
+        }
+        void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            var item = e.SelectedItem as MasterPageItem;
+           
+            if (item != null)
+            {
+                var categoria = item.Title;
+                Detail = new NavigationPage(new CategoriaPage(categoria));
                 masterPage.ListView.SelectedItem = null;
-                IsPresented = true;
+                IsPresented = false;
             }
         }
     }

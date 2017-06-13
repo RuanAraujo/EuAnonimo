@@ -14,7 +14,9 @@ namespace euanon.ViewModel
     public class DescubraViewModel : BaseViewModel
     {
         public ObservableCollection<Post> Posts { get; set; }
+        //public Post postSelecionado { get; set; }
         private Azure _client;
+        public Command<Post> ItemCommand { get; set; }
         public Command RefreshCommand { get; set; }
         public Command GenerateContactsCommand { get; set; }
         public Command CleanLocalDataCommand { get; set; }
@@ -22,44 +24,33 @@ namespace euanon.ViewModel
         public DescubraViewModel()
         {
             RefreshCommand = new Command(() => Load());
-            CleanLocalDataCommand = new Command(() => cleanLocalData());
             Posts = new ObservableCollection<Post>();
+            ItemCommand = new Command<Post>(Item);
             _client = new Azure();
-            //Carregar();
+            Inicio();
         }
-
-
-        async Task cleanLocalData()
+        public async void Item(Post post)
         {
-            await _client.CleanData();
+            await DisplayAlert(post.Titulo, post.Texto, "OK");
         }
-        //public async void Carregar()
-        //{
-        //    IsBusy = true;
-        //    var result = await _client.GetPosts();
+        public async void Inicio()
+        {
+            await Load();
+        }
 
-        //    Posts.Clear();
-
-        //    foreach (var item in result)
-        //    {
-        //        Posts.Add(item);
-        //    }
-        //    IsBusy = false;
-        //}
-
-        public async void Load()
+        public async Task Load()
         {
             IsBusy = true;
             var result = await _client.GetPosts();
 
             Posts.Clear();
 
-            foreach (var item in result)
+            foreach (var item in result.Reverse())
             {
                 Posts.Add(item);
             }
             IsBusy = false;
         }
-
+        
     }
 }

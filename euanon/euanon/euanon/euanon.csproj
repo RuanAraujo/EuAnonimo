@@ -35,6 +35,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Model\Util.cs" />
+    <Compile Include="ViewModel\CategoriaViewModel.cs" />
+    <Compile Include="ViewModel\ConfiguracaoViewModel.cs" />
     <Compile Include="View\AboutPage.xaml.cs">
       <DependentUpon>AboutPage.xaml</DependentUpon>
     </Compile>
@@ -42,6 +45,12 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Authetication\IAuthentication.cs" />
+    <Compile Include="View\CategoriaPage.xaml.cs">
+      <DependentUpon>CategoriaPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ConfiguracaoPage.xaml.cs">
+      <DependentUpon>ConfiguracaoPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\DescubraPage.xaml.cs">
       <DependentUpon>DescubraPage.xaml</DependentUpon>
     </Compile>
@@ -174,6 +183,18 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="View\AboutPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="View\CategoriaPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="View\ConfiguracaoPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

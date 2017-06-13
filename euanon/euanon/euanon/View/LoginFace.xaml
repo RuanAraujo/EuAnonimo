@@ -4,10 +4,11 @@
              x:Class="euanon.LoginFace"
              Title="Eu, Anonimo"
              BackgroundColor="#E0F7FA">
-
+    
     <StackLayout HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Padding="30" Spacing="20">
         <Image Source="logo2escrito.png" WidthRequest="150" HeightRequest="150" VerticalOptions="Center" HorizontalOptions="Center" Margin="30"/>
+        <Label Text="Sem likes, sem shares, apenas nossa expressão, pura e sem segundas intenções." FontSize="Medium" VerticalOptions="CenterAndExpand" HorizontalOptions="Center"/>
         <Label Text="Para acessar, precisamos que logue na sua conta do facebook, mas fique tranquilo, nada será postado em seu nome." FontSize="Micro" TextColor="Gray"/>
-        <Button Command="{Binding LoginCommand}" Text="Logar com facebook" BackgroundColor="AliceBlue" FontSize="Medium" TextColor="Black"/>
+        <Button Command="{Binding LoginCommand}" Text="Logar com facebook" BackgroundColor="Transparent" FontSize="Medium" TextColor="Black"/>
     </StackLayout>
 </ContentPage>

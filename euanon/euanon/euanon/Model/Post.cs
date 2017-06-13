@@ -26,6 +26,18 @@ namespace euanon.Model
         [JsonProperty("Texto")]
         public string Texto { get; set; }
 
-        public string Imagem { get; set; }
+
+        Util util;
+        private string imagem;
+
+        public string Imagem
+        {
+            get { return imagem; }
+            set {
+                    util = new Util();
+                    imagem = util.selecionaImagem(this.Categoria);
+                }
+        }
+
     }
 }
