@@ -45,15 +45,15 @@ namespace euanon.Services
         
         public async void AddPost(Post post)
         {
-            if (Plugin.Connectivity.CrossConnectivity.Current.IsConnected)
-            {
+            //if (Plugin.Connectivity.CrossConnectivity.Current.IsConnected)
+            //{
                 await _table.InsertAsync(post);
-                await SyncAsync();
-            }
-            else
-            {
-                await _table.InsertAsync(post);
-            }
+                //await SyncAsync();
+            //}
+            //else
+            //{
+            //    await _table.InsertAsync(post);
+            //}
         }
 
         public async Task SyncAsync()

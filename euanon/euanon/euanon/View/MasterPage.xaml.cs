@@ -1,6 +1,7 @@
 ﻿using euanon.View;
 using euanon.ViewModel;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -11,12 +12,23 @@ namespace euanon
     {
         public ListView ListView { get { return listView; } }
         public ListView ListViewOpcoes { get { return listViewOpcoes; } }
+        public ListView HomeView { get { return homeView; } }
         public MasterPage()
         {
             InitializeComponent();
 
             BindingContext = new MasterViewModel(Navigation);
 
+            var itens = new List<MasterPageItem>();
+            itens.Add(new MasterPageItem
+            {
+                Title = "Início",
+                IconSource = "home.png",
+                TargetType = typeof(DetailPage)
+            });
+
+
+            //Configs
             var opcoes = new List<MasterPageItem>();
             opcoes.Add(new MasterPageItem
             {
@@ -60,6 +72,7 @@ namespace euanon
 
             listView.ItemsSource = categorias;
             listViewOpcoes.ItemsSource = opcoes;
+            homeView.ItemsSource = itens;
         }
     }
 }

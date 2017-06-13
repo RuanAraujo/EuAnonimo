@@ -6,8 +6,8 @@
              BackgroundColor="#E0F7FA">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Puxe para atualizar" FontSize="Micro" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
-            <ListView SeparatorColor="CadetBlue"
+            <Label Text="Puxe para atualizar, pressione para mais opções!" FontSize="Micro" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
+            <ListView SeparatorColor="#004D40"
                       IsPullToRefreshEnabled="True"
                       HasUnevenRows="True"
                       IsRefreshing="{Binding IsBusy}"
@@ -17,7 +17,17 @@
                       x:Name="listFeed">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <ImageCell ImageSource="{Binding Imagem}" Detail="{Binding Texto}" Text="{Binding Titulo}"/>
+                        <!--<ImageCell ImageSource="{Binding Imagem}" Detail="{Binding Texto}" Text="{Binding Titulo}"/>-->
+                        <ImageCell ImageSource="{Binding Imagem}" Detail="{Binding Texto}" Text="{Binding Titulo}">
+                            <ImageCell.ContextActions>
+                                <MenuItem 
+                                    IsDestructive="True"
+                                    Text="Denunciar"/>
+                                <MenuItem 
+                                     Text="Compartilhar"
+                                     Icon="share.png"/>
+                            </ImageCell.ContextActions>
+                        </ImageCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>

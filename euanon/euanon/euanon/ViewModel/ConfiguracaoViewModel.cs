@@ -23,6 +23,7 @@ namespace euanon.ViewModel
         async Task cleanLocalData()
         {
             await _client.CleanData();
+            await DisplayAlert("Sucesso!", "Os dados foram limpados com sucesso!", "OK");
         }
     }
 }

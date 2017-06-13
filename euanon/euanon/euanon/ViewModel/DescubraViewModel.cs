@@ -27,14 +27,18 @@ namespace euanon.ViewModel
             Posts = new ObservableCollection<Post>();
             ItemCommand = new Command<Post>(Item);
             _client = new Azure();
-            Load();
+            Inicio();
         }
         public async void Item(Post post)
         {
             await DisplayAlert(post.Titulo, post.Texto, "OK");
         }
+        public async void Inicio()
+        {
+            await Load();
+        }
 
-        public async void Load()
+        public async Task Load()
         {
             IsBusy = true;
             var result = await _client.GetPosts();

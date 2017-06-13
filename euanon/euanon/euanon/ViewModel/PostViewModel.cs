@@ -21,8 +21,10 @@ namespace euanon.ViewModel
         public ICommand PostCommand => postCommand ?? (postCommand = new Command(async () => await ExecutePostCommand()));
         Azure azure;
         Post post;
-        public PostViewModel()
+        INavigation navigation;
+        public PostViewModel(INavigation nav)
         {
+            navigation = nav;
             listarCategorias();
             azure = new Azure();
             Entendi = false;
@@ -53,8 +55,24 @@ namespace euanon.ViewModel
             this.Titulo = string.Empty;
             this.Texto = string.Empty;
             this.Categoria = null;
-            
 
+            Application.Current.MainPage = new MainPage();
+            var mainPage = new MainPage();
+
+
+            await navigation.PushAsync(mainPage);
+
+            RemovePageFromStack();
+
+        }
+        private void RemovePageFromStack()
+        {
+            var existingPages = navigation.NavigationStack.ToList();
+            foreach (var page in existingPages)
+            {
+                if (page.GetType() == typeof(LoginFace))
+                    navigation.RemovePage(page);
+            }
         }
         public bool verificaCampos()
         {

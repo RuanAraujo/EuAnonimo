@@ -21,6 +21,18 @@ namespace euanon
 
             masterPage.ListView.ItemSelected += OnItemSelected;
             masterPage.ListViewOpcoes.ItemSelected += OnOpcaoSelected;
+            masterPage.HomeView.ItemSelected += HomeView_ItemSelected;
+        }
+
+        private void HomeView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            var item = e.SelectedItem as MasterPageItem;
+            if (item != null)
+            {
+                Detail = new NavigationPage((Page)Activator.CreateInstance(item.TargetType));
+                masterPage.HomeView.SelectedItem = null;
+                IsPresented = false;
+            }
         }
 
         void OnOpcaoSelected(object sender, SelectedItemChangedEventArgs e)

@@ -16,7 +16,7 @@ namespace euanon
         public PostPage()
         {
             InitializeComponent();
-            BindingContext = new PostViewModel();
+            BindingContext = new PostViewModel(Navigation);
         }
         public void limparCampos()
         {
