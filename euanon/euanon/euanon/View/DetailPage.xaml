@@ -6,13 +6,4 @@
             Title="Eu, Anônimo">
     <local:DescubraPage/>
     <local:PostPage/>
-    <!--<TabbedPage.Children>
-        <ContentPage>
-            <ContentPage.Content>
-                <StackLayout Padding="60" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
-                    <Label Text="Descubra"/>
-                </StackLayout>
-            </ContentPage.Content>
-        </ContentPage>
-    </TabbedPage.Children>-->
 </TabbedPage>

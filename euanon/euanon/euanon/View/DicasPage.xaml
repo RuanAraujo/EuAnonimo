@@ -15,7 +15,7 @@
     </ContentPage>
     <ContentPage>
         <ScrollView>
-                <Grid RowSpacing="0" ColumnSpacing="0">
+                <Grid ColumnSpacing="0" RowSpacing="0">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="150"/>
                         <RowDefinition Height="*"/>
@@ -24,16 +24,16 @@
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <StackLayout Grid.ColumnSpan="2">
-                    <Label Text="Passe para o lado para mais dicas. Dica 1/3 →" HorizontalOptions="End" VerticalOptions="CenterAndExpand" FontSize="Micro" TextColor="Gray" Grid.Column="1" Margin="15"/>
-                        <Label Text="Descubre, Poste!" FontSize="Medium" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Grid.ColumnSpan="2"/>
+                    <StackLayout Grid.ColumnSpan="2">
+                        <Label Text="Passe para o lado para mais dicas. Dica 1/3 →" HorizontalOptions="End" VerticalOptions="CenterAndExpand" FontSize="Micro" TextColor="Gray" Grid.Column="1" Margin="15"/>
+                            <Label Text="Descubre, Poste!" FontSize="Medium" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Grid.ColumnSpan="2"/>
                     </StackLayout>
                     <StackLayout Grid.Column="0" Grid.Row="1" Padding="5">
-                        <Label Text="A página Descubra contém todos os posts, de todas as categorias!" FontSize="Small" Grid.Row="1" Grid.Column="0"/>
-                        <Image Source="descubra2.png" Grid.Row="2" Grid.Column="0"/>
+                    <Label Text="A página Descubra contém todos os posts, de todas as categorias!" FontSize="Small" Grid.Row="1" Grid.Column="0" />
+                    <Image Source="descubra2.png" Grid.Row="2" Grid.Column="0"/>
                     </StackLayout>
-                    <StackLayout Grid.Column="1" Grid.Row="1" Padding="5">
-                        <Label Text="Poste é a página que usará para se expressar!" FontSize="Small" Grid.Column="1" Grid.Row="1"/>
+                    <StackLayout Grid.Column="1" Grid.Row="1" Padding="5" >
+                    <Label Text="Poste é a página que usará para se expressar!" FontSize="Small" Grid.Column="1" Grid.Row="1"/>
                         <Image Source="poste2.png" Grid.Column="1" Grid.Row="2"/>
                     <Button Text="Pular dicas" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="Transparent" Command="{Binding ComecarCommand}" />
                     </StackLayout>
