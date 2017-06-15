@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="euanon.PostPage"
              Title="Poste"
-             BackgroundColor="#E0F7FA">
+    BackgroundColor="#E0F7FA">
     <ContentPage.Content>
         <ScrollView>
             <StackLayout Padding="10">
@@ -16,7 +16,7 @@
                     <Label Text="Li sobre todos  os termos e condições na aba Sobre e concordo com todos os termos."/>
                     <Switch IsToggled="{Binding Entendi}"/>
                 </StackLayout>
-                <Button Text="Postar" BorderRadius="50" BackgroundColor="Transparent" Command="{Binding PostCommand}"/>
+                <Button Text="Postar" BorderRadius="50" BackgroundColor="#00838F" Command="{Binding PostCommand}" TextColor="WhiteSmoke"/>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

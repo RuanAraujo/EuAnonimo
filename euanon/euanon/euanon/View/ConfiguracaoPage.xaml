@@ -7,7 +7,7 @@
     <ContentPage.Content>
         <StackLayout Padding="60">
             <Label Text="Nosso aplicativo permite posts e leitura offline e por isso guardados dados em seu celular! Você pode limpar esses dados por aqui!" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
-            <Button Text="Limpar dados" Command="{Binding CleanLocalDataCommand}" BackgroundColor="Transparent"/>
+            <Button Text="Limpar dados" Command="{Binding CleanLocalDataCommand}" BackgroundColor="#00838F" TextColor="WhiteSmoke"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

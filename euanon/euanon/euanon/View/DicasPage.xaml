@@ -5,7 +5,7 @@
               BackgroundColor="#E0F7FA">
     <ContentPage>
         <StackLayout Padding="45">
-            <Label Text="Passe para o lado para nossas dicas →" HorizontalOptions="End" VerticalOptions="CenterAndExpand" FontSize="Micro" TextColor="Gray"/>
+            <Label Text="Passe para o lado para nossas dicas →" HorizontalOptions="End" VerticalOptions="CenterAndExpand" FontSize="Micro" TextColor="#004D40"/>
             <Label Text="Bem vindo!" FontSize="Medium" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
             <Image Source="logo2escrito.png" WidthRequest="180" HeightRequest="180"/>
             <Label Text="Sem likes, sem shares, apenas nossa expressão, pura e sem segundas intenções." FontSize="Small" VerticalOptions="CenterAndExpand" HorizontalOptions="Center"/>
@@ -35,7 +35,7 @@
                     <StackLayout Grid.Column="1" Grid.Row="1" Padding="5" >
                     <Label Text="Poste é a página que usará para se expressar!" FontSize="Small" Grid.Column="1" Grid.Row="1"/>
                         <Image Source="poste2.png" Grid.Column="1" Grid.Row="2"/>
-                    <Button Text="Pular dicas" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="Transparent" Command="{Binding ComecarCommand}" />
+                    <Button Text="Pular dicas" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="#80CBC4" Command="{Binding ComecarCommand}" TextColor="#263238"/>
                     </StackLayout>
                 </Grid>
             </ScrollView>
@@ -62,7 +62,7 @@
                 <StackLayout Grid.Column="1" Grid.Row="1" Padding="5">
                     <Label Text="Aperte e segure para mais opções como compartilhar ou denunciar!" FontSize="Small" Grid.Column="1" Grid.Row="1"/>
                     <Image Source="selecao2.png" Grid.Column="1" Grid.Row="2"/>
-                    <Button Text="Pular dicas" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="Transparent" Command="{Binding ComecarCommand}"/>
+                    <Button Text="Pular dicas" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="#80CBC4" Command="{Binding ComecarCommand}" TextColor="#263238"/>
                 </StackLayout>
             </Grid>
         </ScrollView>
@@ -89,7 +89,7 @@
                 <StackLayout Grid.Column="1" Grid.Row="1" Padding="5">
                     <Label Text="Temos nossas categorias, sobre e configurações, navegue a vontade!" FontSize="Small" Grid.Column="1" Grid.Row="1"/>
                     <Image Source="menu22.png" Grid.Column="1" Grid.Row="2"/>
-                    <Button Text="Começar" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="Transparent" Command="{Binding ComecarCommand}" />
+                    <Button Text="Começar" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="#80CBC4" Command="{Binding ComecarCommand}" TextColor="#263238"/>
                 </StackLayout>
             </Grid>
         </ScrollView>
