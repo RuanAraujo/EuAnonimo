@@ -11,7 +11,7 @@
 
                 <Image Source="logo2escrito.png" WidthRequest="180" HeightRequest="180"/>
                 <Label Text="Sem likes, sem shares, apenas nossa expressão, pura e sem segundas intenções." FontSize="Medium" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Margin="15"/>
-                <Label Text="Eu, Anônimo" FontSize="Medium" TextColor="Silver" HorizontalOptions="Center" VerticalOptions="Center"/>
+                <Label Text="Eu, Anônimo" FontSize="Medium" TextColor="Gray" HorizontalOptions="Center" VerticalOptions="Center"/>
                 <Label Text="Já teve bastante vontade de postar aquele poema que escreveu, mas teve vergonha? Vergonha de se expressar de forma livre? Bom, com o Eu, Anonimo leia poemas de poetas iguais a você, pode ser seu vizinho, seu amigo, ou seu primo, as possibilidades são infinitas! Simples e fácil, se expresse!" FontSize="Small"/>
                 <Label Text="Por: Eu, Anônimo." FontSize="Micro"/>
 
